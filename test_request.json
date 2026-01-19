@@ -1,0 +1,5 @@
+﻿{
+  "model": "gemini-2.5-flash",
+  "messages": [{"role": "user", "content": "Say OK"}],
+  "max_tokens": 10
+}

@@ -1,0 +1,48 @@
+/* ModelSelector.css */
+
+.model-selector-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
+}
+
+.model-label {
+  font-size: 0.85rem;
+  color: var(--clr-primary);
+  text-shadow: 0 0 5px var(--clr-primary);
+  font-weight: bold;
+  margin: 0;
+}
+
+.model-dropdown {
+  width: 100%;
+  background: var(--clr-input-bg);
+  border: 1px solid var(--clr-input-border);
+  color: var(--clr-text-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.2);
+  border-radius: var(--border-radius-sm);
+}
+
+.model-dropdown:hover {
+  border-color: var(--clr-primary);
+  box-shadow: var(--glow-primary);
+}
+
+.model-dropdown:focus {
+  outline: none;
+  border-color: var(--clr-primary);
+  box-shadow: var(--glow-primary);
+}
+
+.model-dropdown option {
+  background: var(--clr-input-bg);
+  color: var(--clr-text-primary);
+  padding: var(--spacing-sm);
+}
+

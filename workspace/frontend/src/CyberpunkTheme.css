@@ -1,0 +1,134 @@
+/* Custom properties for Cyberpunk Theme */
+
+:root {
+    /* Colors */
+    --clr-background: #0a0a0a;
+    --clr-primary: #00ffff; /* Neon Cyan */
+    --clr-secondary: #ff00ff; /* Neon Magenta */
+    --clr-accent: #00ff00; /* Neon Green */
+    --clr-text-primary: #e0e0e0;
+    --clr-text-secondary: #aaaaaa;
+    --clr-border: rgba(0, 255, 255, 0.3);
+    --clr-input-bg: #1a1a1a;
+    --clr-input-border: #008080; /* Darker cyan for input border */
+    --clr-hover-bg: rgba(0, 255, 255, 0.1);
+    --clr-active-bg: rgba(0, 255, 255, 0.2);
+    --clr-scrollbar-track: #1a1a1a;
+    --clr-scrollbar-thumb: #00ffff;
+    --clr-scrollbar-thumb-hover: #ff00ff;
+    --clr-message-user-bg: #151515;
+    --clr-message-bot-bg: #202020;
+    --clr-code-block-bg: #0d0d0d;
+    --clr-code-text: #00ff00; /* Neon Green for code text */
+
+    /* Fonts */
+    --font-primary: 'Courier New', monospace;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+
+    /* Shadows / Glows */
+    --glow-primary: 0 0 10px rgba(0, 255, 255, 0.5);
+    --glow-secondary: 0 0 10px rgba(255, 0, 255, 0.5);
+    --glow-button-hover: 0 0 15px rgba(0, 255, 255, 0.7);
+    --shadow-card: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    /* Transitions */
+    --transition-speed: 0.3s ease;
+}
+
+/* Custom Scrollbar Styles (WebKit) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-scrollbar-track);
+    border-radius: var(--border-radius-sm);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.3);
+    border-radius: var(--border-radius-sm);
+    transition: background var(--transition-speed);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.5);
+}
+
+/* Hide horizontal scrollbar */
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
+/* Global Reset and Base Styles */
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--clr-background);
+    color: var(--clr-text-primary);
+    font-family: var(--font-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+    transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+}
+
+button, input, textarea, select {
+    font-family: var(--font-primary);
+    color: var(--clr-text-primary);
+    background-color: var(--clr-input-bg);
+    border: 1px solid var(--clr-input-border);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.2);
+    transition: all var(--transition-speed);
+}
+
+button:hover,
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--clr-primary);
+    box-shadow: var(--glow-primary);
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--clr-primary);
+    color: var(--clr-background);
+    border: none;
+    font-weight: bold;
+    padding: var(--spacing-sm) var(--spacing-md);
+    min-width: 44px; /* Touch-friendly button size */
+    min-height: 44px;
+}
+
+button:hover {
+    background-color: var(--clr-secondary);
+    box-shadow: var(--glow-button-hover);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

@@ -1,0 +1,20 @@
+# AutoGen 0.4.x
+autogen-agentchat==0.4.0
+autogen-core==0.4.0
+autogen-ext==0.4.0
+
+# HTTP клиент
+httpx==0.27.0
+
+# Async
+asyncio
+
+# Typing
+typing-extensions
+
+# Logging
+colorlog
+
+# Optional: для дополнительных возможностей
+pydantic>=2.0.0
+python-dotenv
