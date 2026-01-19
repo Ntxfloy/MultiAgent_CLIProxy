@@ -135,6 +135,6 @@ Pull requests приветствуются! Для крупных изменен
 ## 📧 Контакты
 
 - GitHub: [@Ntxfloy](https://github.com/Ntxfloy)
-- Репозиторий: [MultiAgent_CLIProxy](https://github.com/router-for-me/CLIProxyAPIPlus)
+- Репозиторий: [MultiAgent_CLIProxy](https://github.com/Ntxfloy/MultiAgent_CLIProxy)
 
 
