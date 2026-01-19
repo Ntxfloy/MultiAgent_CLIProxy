@@ -38,6 +38,16 @@ logs/
 session_*.log
 multi-agent-logs/
 
+# Development/test files
+main_v2.py
+main_v3.py
+launch_studio.py
+fix_*.ps1
+check_*.ps1
+test_request.json
+*_v2.py
+*_v3.py
+
 # Environment
 .env
 .env.local
