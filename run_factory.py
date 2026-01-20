@@ -1,4 +1,17 @@
-﻿import asyncio
+﻿"""
+⚠️ DEPRECATED - Legacy entrypoint
+
+This file is kept for backward compatibility but is deprecated.
+Use the new CLI instead:
+
+    python -m cli.main init
+    python -m cli.main spec new <task-name>
+    python -m cli.main run <task-name>
+
+See ROADMAP.md for the new architecture.
+"""
+
+import asyncio
 import os
 import sys
 from datetime import datetime
@@ -8,6 +21,9 @@ from core.swarm import SwarmTeam
 from tools.file_ops import write_file, read_file, list_files
 from config import MODELS, BASE_URL, API_KEY
 from core.resilient_client import create_resilient_client
+
+print("⚠️  WARNING: run_factory.py is deprecated. Use 'python -m cli.main' instead.")
+print("   See ROADMAP.md for details.\n")
 
 # Создаем лог-файл с timestamp
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
