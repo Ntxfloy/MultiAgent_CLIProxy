@@ -8,9 +8,11 @@
 ## 🎯 In Progress
 
 ### TASK-001: Project Structure & CLI Foundation
-**Status:** Starting  
+**Status:** ✅ DONE  
 **Assignee:** Kiro  
-**Started:** 2026-01-20
+**Started:** 2026-01-20  
+**Completed:** 2026-01-20  
+**Commit:** 4b6fb23
 
 **Scope:**
 - Create directory structure: cli/, core/, agents/prompts/, tests/, .multiagent/
@@ -248,18 +250,58 @@ python -m compileall core/qa_loop.py
 
 ## ✅ Done
 
-*(No completed tasks yet)*
+### TASK-001: Project Structure & CLI Foundation
+**Completed:** 2026-01-20  
+**Commit:** 4b6fb23
+
+- Created CLI with 8 commands
+- Directory structure: cli/, core/, tests/, .multiagent/
+- Config loader with dot notation
+- All commands have help text
+
+### TASK-002: Worktree Manager MVP
+**Completed:** 2026-01-20  
+**Commit:** bac2c56
+
+- WorktreeManager class with 5 methods
+- Git worktree isolation for tasks
+- 5 unit tests passing
+
+### TASK-003: Safe Shell Runner MVP
+**Completed:** 2026-01-20  
+**Commit:** aea33be
+
+- ShellRunner with allowlist (23 commands) and denylist (14 patterns)
+- cwd restriction, command logging
+- 5 unit tests passing
+
+### TASK-004: State Persistence + Resume
+**Completed:** 2026-01-20  
+**Commit:** 28ba3ae
+
+- StateStore with atomic writes (tmp+rename)
+- Auto metadata: task_id, created_at, updated_at
+- 6 unit tests passing
+
+### TASK-005: Basic QA Loop
+**Completed:** 2026-01-20  
+**Commit:** 99bad42
+
+- QALoop with JSON validation
+- Recurring issue detection
+- Fix request generation
+- 6 unit tests passing
 
 ---
 
 ## 📊 Statistics
 
 - **Total Tasks:** 10
-- **In Progress:** 1
-- **Next:** 4
-- **Backlog:** 5
-- **Done:** 0
-- **Completion:** 0%
+- **In Progress:** 0
+- **Next:** 5
+- **Backlog:** 0
+- **Done:** 5
+- **Completion:** 50% (MVP complete!)
 
 ---
 
