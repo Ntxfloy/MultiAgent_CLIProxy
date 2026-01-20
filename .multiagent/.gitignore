@@ -1,0 +1,8 @@
+# Ignore all state and runtime files
+tasks/
+worktrees/
+logs/
+config.json
+
+# But keep directory structure
+!.gitignore
